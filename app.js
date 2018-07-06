@@ -26,7 +26,25 @@ function shuffle(array) {
 }
 
 
+//If a card is clicked
+document.getElementsByClassName("card").addEventListener("click", function cardClick(event) {
+    card.toggleClass("open");
+    card.toggleClass("show");
+}); open=[];};
 
+//If match cards 
+function matchCards() {
+    matchCards.push(this);
+    var match = matchCards.length;
+    if(match===2){
+        moveCounter();
+        if(matchCards[0].type===matchCards[i].type) {
+            matched(); 
+        } else {
+            unmatched();
+        }
+    }
+};
 
 /*
  * set up the event listener for a card. If a card is clicked:
