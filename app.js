@@ -2,10 +2,7 @@
  * Create a list that holds all of your cards
  */
 const cardsName = ['fa fa-diamond', 'fa fa-paper-plane-o', 'fa fa-anchor', 'fa fa-bolt', 'fa fa-cube', 'fa fa-anchor', 'fa fa-leaf', 'fa fa-bicycle', 'fa fa-diamond', 'fa fa-bomb', 'fa fa-leaf', 'fa fa-bomb', 'fa fa-bolt', 'fa fa-bicycle', 'fa fa-paper-plane-o', 'fa fa-cube'];
-let openCards = [];
-let cards = [];
-let moves = 0;
-let stars = 3;
+
 /*
  * Display the cards on the page
  *   - shuffle the list of cards using the provided "shuffle" method below
@@ -30,24 +27,15 @@ function shuffle(array) {
 
 
 //If a card is clicked
-document.getElementsByClassName("card").addEventListener("click", function cardClick(event) {
-    card.toggleClass("open");
-    card.toggleClass("show");
-}); open=[];};
-
-//If match cards 
-function matchCards() {
-    matchCards.push(this);
-    var match = matchCards.length;
-    if(match===2){
-        moveCounter();
-        if(matchCards[0].type===matchCards[i].type) {
-            matched(); 
-        } else {
-            unmatched();
-        }
-    }
-};
+selectCard = function(clickCard) {
+    clickCard.on('click', function() {
+        $(".card").toggle(open);
+        $(".card").toggle(show);
+        
+        
+        
+        
+    
 
 /*
  * set up the event listener for a card. If a card is clicked:
